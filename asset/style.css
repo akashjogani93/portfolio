@@ -1,0 +1,157 @@
+
+:root {
+    --twitter-blue:hsl(203, 87%, 34%);
+    --insta:#b43a46;
+    --gitgub:black
+}
+
+body{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    /* height: 1500px;px; */
+    padding-top: 70px;
+}
+section p, h2{
+    color:white;
+}
+#contact
+{
+    height: 900px;
+}
+
+#home
+{
+    background-image: url("./images/home.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 180px;
+}
+
+.sidebarIcon
+{
+    position: fixed !important;
+    padding:0 10px;
+    background-color: rgba(255, 255, 255, 0.59) !important;
+    border-radius: 5px;
+    transform: translateX(-100%); 
+    animation: slideDown 0.5s ease forwards; 
+}
+
+.sidebarIcon .fa
+{
+    font-size: 40px;
+    display: block;
+    margin: 10px 0;
+}
+
+i.fa.fa-twitter
+{
+    color: var(--twitter-blue);
+}
+i.fa.fa-instagram
+{
+    color:var(--insta);
+}
+i.fa.fa-github
+{
+    color:var(--gitgub);
+}
+i.fa.fa-linkedin-square
+{
+    color: var(--twitter-blue);
+}
+
+i.fa.fa-twitter:hover, i.fa.fa-linkedin-square:hover{
+    color: hsl(203, 98%, 19%);
+}
+i.fa.fa-instagram:hover
+{
+    color: #920f1c;
+}
+i.fa.fa-github:hover
+{
+    color:rgb(24, 24, 24)
+}
+
+
+.home-header
+{
+    width: 100%;
+}
+.home-header h1
+{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+.home-header h1, h6
+{
+    color:white;
+    float: right;
+}
+.home-header h6 {
+    padding-left: 45%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* About Us */
+.about-header
+{
+    font-size:24px;
+    margin-bottom: 30px;
+    color:white;
+}
+.about-para
+{
+    font-size: 18px;
+    color: #a8a8a8;
+    /* max-width: 60rem; */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.bt-pro
+{
+    color:#ffbd39;
+    border:2px solid #ffbd39;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+}
+.bt-pro:hover
+{
+    color:#ffbd39;
+    border:2px solid #ffbd39;
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.resumeBox
+{
+    background-image: url("./images/home.png");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 180px;
+}
