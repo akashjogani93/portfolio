@@ -17,6 +17,63 @@
     <link rel="stylesheet" href="asset/style.css">
     <link rel="stylesheet" href="asset/nav.css">
     <link rel="stylesheet" href="asset/responsive.css">
+    <style>
+            .prgrs-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+.p-text{
+    color:white;
+    font-size: 16px;
+}
+.progress {
+    height: 6px;
+}
+.progress-bar{
+    background-color: #f55422;
+}
+.nav-tabs {
+    display:flex;
+    justify-content: center;
+}
+
+.card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card img {
+            transition: transform 0.2s;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card .card-body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+        }
+        .cardss{
+            margin-top:30px;
+            background-color: white;;
+        }
+        .card-text {
+    color: black;
+}
+    </style>
 </head>
 <body>
     <div id="header-container"></div>
@@ -164,26 +221,190 @@
     </div>
     
 
+    <div class="container">
         <section id="skill">
-            <h2>Our Services</h2>
-            <p>We offer a variety of services including...</p>
-            <button class="scroll-btn" data-target="projects">Next</button>
-            <button class="scroll-btn" data-target="service">Previous</button>
-        </section>
+            <center><h2>Skills</h2><h2 class="heading"></h2></center>
+            
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">Figma</h5>
+                        <h5 class="p-text">75%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">Php</h5>
+                        <h5 class="p-text">90%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">Wordpress</h5>
+                        <h5 class="p-text">95%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-6">
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">HTML</h5>
+                        <h5 class="p-text">80%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">CSS</h5>
+                        <h5 class="p-text">80%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <div class="prgrs-heading">
+                        <h5 class="p-text">Bootstrap</h5>
+                        <h5 class="p-text">85%</h5>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+    </div>
+        
+    <div class="container">
         <section id="projects">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out to us...</p>
-            <button class="scroll-btn" data-target="myblog">Next</button>
-            <button class="scroll-btn" data-target="skill">Previous</button>
-        </section>
+            <center><h2>Projects</h2><h2 class="heading"></h2></center>
+                <ul class="nav nav-tabs" id="dynamicTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab1">Wordpress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab2">Figma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab3">Php</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab1">
+                       
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Job Factoy</h5>
+                                        <p class="card-text">This is an a website</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                  <a href="#">  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dhaneshwari</h5>
+                                        <p class="card-text">This is an a website</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">August Reality</h5>
+                                        <p class="card-text">This is an a website</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        <section id="myblog">
-            <h2>Our Services</h2>
-            <p>We offer a variety of services including...</p>
-            <button class="scroll-btn" data-target="contact">Next</button>
-            <button class="scroll-btn" data-target="projects">Previous</button>
+
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Job Factoy</h5>
+                                        <p class="card-text">This is an a Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                  <a href="#">  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dhaneshwari</h5>
+                                        <p class="card-text">This is an a Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">August Reality</h5>
+                                        <p class="card-text">This is an a Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="tab3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gym management</h5>
+                                        <p class="card-text">This is an a Software</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                  <a href="#">  <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image"></a>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laundry Management</h5>
+                                        <p class="card-text">This is an a Software</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Oye shawa</h5>
+                                        <p class="card-text">This is an a Billing Software</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
         </section>
+    </div>
+
+   
 
         <section id="contact">
             <h2>Contact Us</h2>
@@ -253,5 +474,36 @@
             $("#header-container").load("header.html");
         });
         </script>
+        
+<script>
+    $(document).ready(function(){
+        // Add a new tab and content dynamically
+        $("#addTabButton").on("click", function(){
+            var newTabTitle = "New Tab";
+            var newTabContent = "This is the content of the new tab.";
+
+            // Create a unique ID for the new tab
+            var tabId = "tab" + Date.now();
+
+            // Add the new tab to the navigation
+            $("#dynamicTabs").append(`
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#${tabId}">${newTabTitle}</a>
+                </li>
+            `);
+
+            // Add the content for the new tab
+            $(".tab-content").append(`
+                <div class="tab-pane fade" id="${tabId}">
+                    <h3>${newTabTitle} Content</h3>
+                    <p>${newTabContent}</p>
+                </div>
+            `);
+
+            // Activate the newly added tab
+            $(`a[href="#${tabId}"]`).tab('show');
+        });
+    });
+</script>
 </body>
 </html>
